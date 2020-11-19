@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+//import Split from './composition/Split';
 import './App.css';
+//import Tooltip from './composition/Tooltip'
+//import Messages from './Messages';
+import TheDate from './state/TheDate'
+import Counter from './state/Counter'
+
+//make 2 tooltips here and another inside the App directly
+// const firstToolTip = (
+//   <Tooltip color='hotpink' message='tooltip-message'>
+//     ipsum
+//   </Tooltip>
+// )
+
+// const secondToolTip = (
+//   <tooltip color='#126BCC' message='another tooltip message'>
+//     officiis
+//   </tooltip>
+// )
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='App'>
+      {/* <div>Hello!</div>
+      <Messages name="Messages" unread={0} />
+      <Messages name="Notification" unread={10} /> */}
+      <TheDate />
+      <Counter step={3} />
+    </main>
+
   );
 }
 
