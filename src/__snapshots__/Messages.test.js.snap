@@ -20,24 +20,3 @@ exports[`Messages componenet Renders the UI as expected with no unreads 1`] = `
   Messages
 </div>
 `;
-
-exports[`Renders the UI as expected 1`] = `
-<div
-  className="messages"
->
-  Messages
-  <div
-    className="unread_count badge"
-  >
-    4
-  </div>
-</div>
-`;
-
-exports[`Renders the UI as expected with no unreads 1`] = `
-<div
-  className="messages"
->
-  Messages
-</div>
-`;
